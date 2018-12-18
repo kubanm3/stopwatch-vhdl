@@ -1,0 +1,20 @@
+Analysis & Synthesis Status : Successful - Tue Dec 18 19:28:28 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : stoperJedenPrzycisk
+Top-level Entity Name : stoperJedenPrzycisk
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 0
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 30
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
