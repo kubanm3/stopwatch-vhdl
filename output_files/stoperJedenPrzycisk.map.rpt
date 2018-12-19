@@ -1,5 +1,5 @@
 Analysis & Synthesis report for stoperJedenPrzycisk
-Tue Dec 18 19:28:28 2018
+Wed Dec 19 17:08:02 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +43,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Tue Dec 18 19:28:28 2018       ;
+; Analysis & Synthesis Status       ; Successful - Wed Dec 19 17:08:02 2018       ;
 ; Quartus Prime Version             ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                     ; stoperJedenPrzycisk                         ;
-; Top-level Entity Name             ; stoperJedenPrzycisk                         ;
+; Top-level Entity Name             ; Block1                                      ;
 ; Family                            ; Arria II GX                                 ;
 ; Logic utilization                 ; N/A                                         ;
-;     Combinational ALUTs           ; 0                                           ;
+;     Combinational ALUTs           ; 85                                          ;
 ;     Memory ALUTs                  ; 0                                           ;
-;     Dedicated logic registers     ; 0                                           ;
-; Total registers                   ; 0                                           ;
+;     Dedicated logic registers     ; 72                                          ;
+; Total registers                   ; 72                                          ;
 ; Total pins                        ; 30                                          ;
 ; Total virtual pins                ; 0                                           ;
 ; Total block memory bits           ; 0                                           ;
@@ -65,90 +66,90 @@ refer to the applicable agreement for further details.
 +-----------------------------------+---------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                               ;
-+---------------------------------------------------------------------------------+---------------------+---------------------+
-; Option                                                                          ; Setting             ; Default Value       ;
-+---------------------------------------------------------------------------------+---------------------+---------------------+
-; Top-level entity name                                                           ; stoperJedenPrzycisk ; stoperJedenPrzycisk ;
-; Family name                                                                     ; Arria II GX         ; Cyclone V           ;
-; Use smart compilation                                                           ; Off                 ; Off                 ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                  ; On                  ;
-; Enable compact report table                                                     ; Off                 ; Off                 ;
-; Restructure Multiplexers                                                        ; Auto                ; Auto                ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                 ; Off                 ;
-; Create Debugging Nodes for IP Cores                                             ; Off                 ; Off                 ;
-; Preserve fewer node names                                                       ; On                  ; On                  ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable              ; Enable              ;
-; Verilog Version                                                                 ; Verilog_2001        ; Verilog_2001        ;
-; VHDL Version                                                                    ; VHDL_1993           ; VHDL_1993           ;
-; State Machine Processing                                                        ; Auto                ; Auto                ;
-; Safe State Machine                                                              ; Off                 ; Off                 ;
-; Extract Verilog State Machines                                                  ; On                  ; On                  ;
-; Extract VHDL State Machines                                                     ; On                  ; On                  ;
-; Ignore Verilog initial constructs                                               ; Off                 ; Off                 ;
-; Iteration limit for constant Verilog loops                                      ; 5000                ; 5000                ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                 ; 250                 ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                  ; On                  ;
-; Infer RAMs from Raw Logic                                                       ; On                  ; On                  ;
-; Parallel Synthesis                                                              ; On                  ; On                  ;
-; DSP Block Balancing                                                             ; Auto                ; Auto                ;
-; NOT Gate Push-Back                                                              ; On                  ; On                  ;
-; Power-Up Don't Care                                                             ; On                  ; On                  ;
-; Remove Redundant Logic Cells                                                    ; Off                 ; Off                 ;
-; Remove Duplicate Registers                                                      ; On                  ; On                  ;
-; Ignore CARRY Buffers                                                            ; Off                 ; Off                 ;
-; Ignore CASCADE Buffers                                                          ; Off                 ; Off                 ;
-; Ignore GLOBAL Buffers                                                           ; Off                 ; Off                 ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                 ; Off                 ;
-; Ignore LCELL Buffers                                                            ; Off                 ; Off                 ;
-; Ignore SOFT Buffers                                                             ; On                  ; On                  ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                 ; Off                 ;
-; Optimization Technique                                                          ; Balanced            ; Balanced            ;
-; Carry Chain Length                                                              ; 70                  ; 70                  ;
-; Auto Carry Chains                                                               ; On                  ; On                  ;
-; Auto Open-Drain Pins                                                            ; On                  ; On                  ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                 ; Off                 ;
-; Auto ROM Replacement                                                            ; On                  ; On                  ;
-; Auto RAM Replacement                                                            ; On                  ; On                  ;
-; Auto DSP Block Replacement                                                      ; On                  ; On                  ;
-; Auto Shift Register Replacement                                                 ; Auto                ; Auto                ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto                ; Auto                ;
-; Auto Clock Enable Replacement                                                   ; On                  ; On                  ;
-; Strict RAM Replacement                                                          ; Off                 ; Off                 ;
-; Allow Synchronous Control Signals                                               ; On                  ; On                  ;
-; Force Use of Synchronous Clear Signals                                          ; Off                 ; Off                 ;
-; Auto RAM Block Balancing                                                        ; On                  ; On                  ;
-; Auto RAM to Logic Cell Conversion                                               ; Off                 ; Off                 ;
-; Auto Resource Sharing                                                           ; Off                 ; Off                 ;
-; Allow Any RAM Size For Recognition                                              ; Off                 ; Off                 ;
-; Allow Any ROM Size For Recognition                                              ; Off                 ; Off                 ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                 ; Off                 ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                  ; On                  ;
-; Ignore translate_off and synthesis_off directives                               ; Off                 ; Off                 ;
-; Timing-Driven Synthesis                                                         ; On                  ; On                  ;
-; Report Parameter Settings                                                       ; On                  ; On                  ;
-; Report Source Assignments                                                       ; On                  ; On                  ;
-; Report Connectivity Checks                                                      ; On                  ; On                  ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                 ; Off                 ;
-; Synchronization Register Chain Length                                           ; 3                   ; 3                   ;
-; Power Optimization During Synthesis                                             ; Normal compilation  ; Normal compilation  ;
-; HDL message level                                                               ; Level2              ; Level2              ;
-; Suppress Register Optimization Related Messages                                 ; Off                 ; Off                 ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000                ; 5000                ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                ; 5000                ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                 ; 100                 ;
-; Clock MUX Protection                                                            ; On                  ; On                  ;
-; Auto Gated Clock Conversion                                                     ; Off                 ; Off                 ;
-; Block Design Naming                                                             ; Auto                ; Auto                ;
-; SDC constraint protection                                                       ; Off                 ; Off                 ;
-; Synthesis Effort                                                                ; Auto                ; Auto                ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                  ; On                  ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                 ; Off                 ;
-; Analysis & Synthesis Message Level                                              ; Medium              ; Medium              ;
-; Disable Register Merging Across Hierarchies                                     ; Auto                ; Auto                ;
-; Resource Aware Inference For Block RAM                                          ; On                  ; On                  ;
-+---------------------------------------------------------------------------------+---------------------+---------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                              ;
++---------------------------------------------------------------------------------+--------------------+---------------------+
+; Option                                                                          ; Setting            ; Default Value       ;
++---------------------------------------------------------------------------------+--------------------+---------------------+
+; Top-level entity name                                                           ; Block1             ; stoperJedenPrzycisk ;
+; Family name                                                                     ; Arria II GX        ; Cyclone V           ;
+; Use smart compilation                                                           ; Off                ; Off                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                  ;
+; Enable compact report table                                                     ; Off                ; Off                 ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto                ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                 ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                 ;
+; Preserve fewer node names                                                       ; On                 ; On                  ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable              ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001        ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993           ;
+; State Machine Processing                                                        ; Auto               ; Auto                ;
+; Safe State Machine                                                              ; Off                ; Off                 ;
+; Extract Verilog State Machines                                                  ; On                 ; On                  ;
+; Extract VHDL State Machines                                                     ; On                 ; On                  ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                 ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000                ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                 ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                  ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                  ;
+; Parallel Synthesis                                                              ; On                 ; On                  ;
+; DSP Block Balancing                                                             ; Auto               ; Auto                ;
+; NOT Gate Push-Back                                                              ; On                 ; On                  ;
+; Power-Up Don't Care                                                             ; On                 ; On                  ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                 ;
+; Remove Duplicate Registers                                                      ; On                 ; On                  ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                 ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                 ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                 ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                 ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                  ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                 ;
+; Optimization Technique                                                          ; Balanced           ; Balanced            ;
+; Carry Chain Length                                                              ; 70                 ; 70                  ;
+; Auto Carry Chains                                                               ; On                 ; On                  ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                  ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                 ;
+; Auto ROM Replacement                                                            ; On                 ; On                  ;
+; Auto RAM Replacement                                                            ; On                 ; On                  ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                  ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto                ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto                ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                  ;
+; Strict RAM Replacement                                                          ; Off                ; Off                 ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                  ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                 ;
+; Auto RAM Block Balancing                                                        ; On                 ; On                  ;
+; Auto RAM to Logic Cell Conversion                                               ; Off                ; Off                 ;
+; Auto Resource Sharing                                                           ; Off                ; Off                 ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                 ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                 ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                 ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                  ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                 ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                  ;
+; Report Parameter Settings                                                       ; On                 ; On                  ;
+; Report Source Assignments                                                       ; On                 ; On                  ;
+; Report Connectivity Checks                                                      ; On                 ; On                  ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                 ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                   ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation  ;
+; HDL message level                                                               ; Level2             ; Level2              ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                 ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000                ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000                ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                 ;
+; Clock MUX Protection                                                            ; On                 ; On                  ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                 ;
+; Block Design Naming                                                             ; Auto               ; Auto                ;
+; SDC constraint protection                                                       ; Off                ; Off                 ;
+; Synthesis Effort                                                                ; Auto               ; Auto                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                  ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                 ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium              ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto                ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                  ;
++---------------------------------------------------------------------------------+--------------------+---------------------+
 
 
 +------------------------------------------+
@@ -160,77 +161,89 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-; stoperJedenPrzycisk.vhd          ; yes             ; User VHDL File  ; C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; dzielnik.vhd                     ; yes             ; User VHDL File                     ; C:/Users/kuban/Desktop/timewatch vhdl/dzielnik.vhd     ;         ;
+; sevenSeg.vhd                     ; yes             ; User VHDL File                     ; C:/Users/kuban/Desktop/timewatch vhdl/sevenSeg.vhd     ;         ;
+; buttonLogika.vhd                 ; yes             ; User VHDL File                     ; C:/Users/kuban/Desktop/timewatch vhdl/buttonLogika.vhd ;         ;
+; licznik16bit.vhd                 ; yes             ; User VHDL File                     ; C:/Users/kuban/Desktop/timewatch vhdl/licznik16bit.vhd ;         ;
+; Block1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kuban/Desktop/timewatch vhdl/Block1.bdf       ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+-----------------------------------------------+------------+
-; Resource                                      ; Usage      ;
-+-----------------------------------------------+------------+
-; Estimated ALUTs Used                          ; 0          ;
-;     -- Combinational ALUTs                    ; 0          ;
-;     -- Memory ALUTs                           ; 0          ;
-;     -- LUT_REGs                               ; 0          ;
-; Dedicated logic registers                     ; 0          ;
-;                                               ;            ;
-; Estimated ALUTs Unavailable                   ; 0          ;
-;     -- Due to unpartnered combinational logic ; 0          ;
-;     -- Due to Memory ALUTs                    ; 0          ;
-;                                               ;            ;
-; Total combinational functions                 ; 0          ;
-; Combinational ALUT usage by number of inputs  ;            ;
-;     -- 7 input functions                      ; 0          ;
-;     -- 6 input functions                      ; 0          ;
-;     -- 5 input functions                      ; 0          ;
-;     -- 4 input functions                      ; 0          ;
-;     -- <=3 input functions                    ; 0          ;
-;                                               ;            ;
-; Combinational ALUTs by mode                   ;            ;
-;     -- normal mode                            ; 0          ;
-;     -- extended LUT mode                      ; 0          ;
-;     -- arithmetic mode                        ; 0          ;
-;     -- shared arithmetic mode                 ; 0          ;
-;                                               ;            ;
-; Estimated ALUT/register pairs used            ; 0          ;
-;                                               ;            ;
-; Total registers                               ; 0          ;
-;     -- Dedicated logic registers              ; 0          ;
-;     -- I/O registers                          ; 0          ;
-;     -- LUT_REGs                               ; 0          ;
-;                                               ;            ;
-;                                               ;            ;
-; I/O pins                                      ; 30         ;
-;                                               ;            ;
-; DSP block 18-bit elements                     ; 0          ;
-;                                               ;            ;
-; Maximum fan-out node                          ; clock50MHz ;
-; Maximum fan-out                               ; 1          ;
-; Total fan-out                                 ; 30         ;
-; Average fan-out                               ; 0.50       ;
-+-----------------------------------------------+------------+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++-----------------------------------------------+----------------------+
+; Resource                                      ; Usage                ;
++-----------------------------------------------+----------------------+
+; Estimated ALUTs Used                          ; 85                   ;
+;     -- Combinational ALUTs                    ; 85                   ;
+;     -- Memory ALUTs                           ; 0                    ;
+;     -- LUT_REGs                               ; 0                    ;
+; Dedicated logic registers                     ; 72                   ;
+;                                               ;                      ;
+; Estimated ALUTs Unavailable                   ; 4                    ;
+;     -- Due to unpartnered combinational logic ; 4                    ;
+;     -- Due to Memory ALUTs                    ; 0                    ;
+;                                               ;                      ;
+; Total combinational functions                 ; 85                   ;
+; Combinational ALUT usage by number of inputs  ;                      ;
+;     -- 7 input functions                      ; 0                    ;
+;     -- 6 input functions                      ; 4                    ;
+;     -- 5 input functions                      ; 5                    ;
+;     -- 4 input functions                      ; 47                   ;
+;     -- <=3 input functions                    ; 29                   ;
+;                                               ;                      ;
+; Combinational ALUTs by mode                   ;                      ;
+;     -- normal mode                            ; 63                   ;
+;     -- extended LUT mode                      ; 0                    ;
+;     -- arithmetic mode                        ; 22                   ;
+;     -- shared arithmetic mode                 ; 0                    ;
+;                                               ;                      ;
+; Estimated ALUT/register pairs used            ; 89                   ;
+;                                               ;                      ;
+; Total registers                               ; 72                   ;
+;     -- Dedicated logic registers              ; 72                   ;
+;     -- I/O registers                          ; 0                    ;
+;     -- LUT_REGs                               ; 0                    ;
+;                                               ;                      ;
+;                                               ;                      ;
+; I/O pins                                      ; 30                   ;
+;                                               ;                      ;
+; DSP block 18-bit elements                     ; 0                    ;
+;                                               ;                      ;
+; Maximum fan-out node                          ; dzielnik:inst45|temp ;
+; Maximum fan-out                               ; 45                   ;
+; Total fan-out                                 ; 544                  ;
+; Average fan-out                               ; 2.51                 ;
++-----------------------------------------------+----------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------+---------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name         ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------+---------------------+--------------+
-; |stoperJedenPrzycisk       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 30   ; 0            ; |stoperJedenPrzycisk ; stoperJedenPrzycisk ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------+---------------------+--------------+
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------+--------------+--------------+
+; |Block1                    ; 85 (0)              ; 72 (0)                    ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 30   ; 0            ; |Block1                     ; Block1       ; work         ;
+;    |buttonLogika:inst50|   ; 5 (5)               ; 5 (5)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |Block1|buttonLogika:inst50 ; buttonLogika ; work         ;
+;    |dzielnik:inst45|       ; 28 (28)             ; 23 (23)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |Block1|dzielnik:inst45     ; dzielnik     ; work         ;
+;    |licznik16bit:inst|     ; 24 (24)             ; 16 (16)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |Block1|licznik16bit:inst   ; licznik16bit ; work         ;
+;    |sevenSeg:inst6|        ; 7 (7)               ; 7 (7)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |Block1|sevenSeg:inst6      ; sevenSeg     ; work         ;
+;    |sevenSeg:inst7|        ; 7 (7)               ; 7 (7)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |Block1|sevenSeg:inst7      ; sevenSeg     ; work         ;
+;    |sevenSeg:inst8|        ; 7 (7)               ; 7 (7)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |Block1|sevenSeg:inst8      ; sevenSeg     ; work         ;
+;    |sevenSeg:inst9|        ; 7 (7)               ; 7 (7)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |Block1|sevenSeg:inst9      ; sevenSeg     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -239,14 +252,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 72    ;
+; Number of registers using Synchronous Clear  ; 22    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 12    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; 13:1               ; 4 bits    ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |Block1|buttonLogika:inst50|start ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 
 
 +-----------------------------------------------------+
@@ -254,13 +276,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+; arriaii_ff            ; 72                          ;
+;     CLR               ; 4                           ;
+;     ENA CLR           ; 12                          ;
+;     SCLR              ; 22                          ;
+;     plain             ; 34                          ;
 ; boundary_port         ; 30                          ;
-; stratixiv_lcell_comb  ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
+; stratixiv_lcell_comb  ; 85                          ;
+;     arith             ; 22                          ;
+;         1 data inputs ; 22                          ;
+;     normal            ; 63                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 47                          ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 4                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 3.10                        ;
+; Average LUT depth     ; 1.53                        ;
 +-----------------------+-----------------------------+
 
 
@@ -279,71 +313,104 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Dec 18 19:28:14 2018
+    Info: Processing started: Wed Dec 19 17:07:47 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off stoperJedenPrzycisk -c stoperJedenPrzycisk
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file dzielnik.vhd
-    Info (12022): Found design unit 1: dzielnik-Behavioral File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/dzielnik.vhd Line: 11
-    Info (12023): Found entity 1: dzielnik File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/dzielnik.vhd Line: 4
+    Info (12022): Found design unit 1: dzielnik-Behavioral File: C:/Users/kuban/Desktop/timewatch vhdl/dzielnik.vhd Line: 11
+    Info (12023): Found entity 1: dzielnik File: C:/Users/kuban/Desktop/timewatch vhdl/dzielnik.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file stoperjedenprzycisk.vhd
-    Info (12022): Found design unit 1: stoperJedenPrzycisk-Behavioral File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 16
-    Info (12023): Found entity 1: stoperJedenPrzycisk File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 4
+    Info (12022): Found design unit 1: stoperJedenPrzycisk-Behavioral File: C:/Users/kuban/Desktop/timewatch vhdl/stoperJedenPrzycisk.vhd Line: 16
+    Info (12023): Found entity 1: stoperJedenPrzycisk File: C:/Users/kuban/Desktop/timewatch vhdl/stoperJedenPrzycisk.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sevenseg.vhd
-    Info (12022): Found design unit 1: sevenSeg-Behavioral File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/sevenSeg.vhd Line: 14
-    Info (12023): Found entity 1: sevenSeg File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/sevenSeg.vhd Line: 6
+    Info (12022): Found design unit 1: sevenSeg-Behavioral File: C:/Users/kuban/Desktop/timewatch vhdl/sevenSeg.vhd Line: 14
+    Info (12023): Found entity 1: sevenSeg File: C:/Users/kuban/Desktop/timewatch vhdl/sevenSeg.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file buttonlogika.vhd
-    Info (12022): Found design unit 1: buttonLogika-Behavioral File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/buttonLogika.vhd Line: 11
-    Info (12023): Found entity 1: buttonLogika File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/buttonLogika.vhd Line: 4
+    Info (12022): Found design unit 1: buttonLogika-Behavioral File: C:/Users/kuban/Desktop/timewatch vhdl/buttonLogika.vhd Line: 11
+    Info (12023): Found entity 1: buttonLogika File: C:/Users/kuban/Desktop/timewatch vhdl/buttonLogika.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file licznik16bit.vhd
-    Info (12022): Found design unit 1: licznik16bit-Behavioral File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/licznik16bit.vhd Line: 15
-    Info (12023): Found entity 1: licznik16bit File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/licznik16bit.vhd Line: 6
-Info (12127): Elaborating entity "stoperJedenPrzycisk" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at stoperJedenPrzycisk.vhd(8): used implicit default value for signal "OUT1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 8
-Warning (10541): VHDL Signal Declaration warning at stoperJedenPrzycisk.vhd(9): used implicit default value for signal "OUT2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 9
-Warning (10541): VHDL Signal Declaration warning at stoperJedenPrzycisk.vhd(10): used implicit default value for signal "OUT3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at stoperJedenPrzycisk.vhd(11): used implicit default value for signal "OUT4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 11
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "OUT1[0]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 8
-    Warning (13410): Pin "OUT1[1]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 8
-    Warning (13410): Pin "OUT1[2]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 8
-    Warning (13410): Pin "OUT1[3]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 8
-    Warning (13410): Pin "OUT1[4]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 8
-    Warning (13410): Pin "OUT1[5]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 8
-    Warning (13410): Pin "OUT1[6]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 8
-    Warning (13410): Pin "OUT2[0]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 9
-    Warning (13410): Pin "OUT2[1]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 9
-    Warning (13410): Pin "OUT2[2]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 9
-    Warning (13410): Pin "OUT2[3]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 9
-    Warning (13410): Pin "OUT2[4]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 9
-    Warning (13410): Pin "OUT2[5]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 9
-    Warning (13410): Pin "OUT2[6]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 9
-    Warning (13410): Pin "OUT3[0]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 10
-    Warning (13410): Pin "OUT3[1]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 10
-    Warning (13410): Pin "OUT3[2]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 10
-    Warning (13410): Pin "OUT3[3]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 10
-    Warning (13410): Pin "OUT3[4]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 10
-    Warning (13410): Pin "OUT3[5]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 10
-    Warning (13410): Pin "OUT3[6]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 10
-    Warning (13410): Pin "OUT4[0]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 11
-    Warning (13410): Pin "OUT4[1]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 11
-    Warning (13410): Pin "OUT4[2]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 11
-    Warning (13410): Pin "OUT4[3]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 11
-    Warning (13410): Pin "OUT4[4]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 11
-    Warning (13410): Pin "OUT4[5]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 11
-    Warning (13410): Pin "OUT4[6]" is stuck at GND File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 11
+    Info (12022): Found design unit 1: licznik16bit-Behavioral File: C:/Users/kuban/Desktop/timewatch vhdl/licznik16bit.vhd Line: 15
+    Info (12023): Found entity 1: licznik16bit File: C:/Users/kuban/Desktop/timewatch vhdl/licznik16bit.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
+    Info (12023): Found entity 1: Block1
+Info (12127): Elaborating entity "Block1" for the top level hierarchy
+Warning (275083): Bus "segment72[0]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment72[1]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment72[2]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment72[3]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment72[4]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment72[5]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment72[6]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment73[0]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment73[1]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment73[2]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment73[3]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment73[4]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment73[5]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment73[6]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment74[0]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment74[1]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment74[2]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment74[3]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment74[4]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment74[5]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment74[6]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment72[6..0]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment73[6..0]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275083): Bus "segment74[6..0]" found using same base name as "segment7", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "segment7" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "segment7[0]" to "segment70"
+    Warning (275081): Converted element name(s) from "segment7[1]" to "segment71"
+    Warning (275081): Converted element name(s) from "segment7[2]" to "segment72"
+    Warning (275081): Converted element name(s) from "segment7[3]" to "segment73"
+    Warning (275081): Converted element name(s) from "segment7[4]" to "segment74"
+    Warning (275081): Converted element name(s) from "segment7[5]" to "segment75"
+    Warning (275081): Converted element name(s) from "segment7[6]" to "segment76"
+    Warning (275081): Converted element name(s) from "segment7[6..0]" to "segment76..0"
+Warning (275080): Converted elements in bus name "segment72" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "segment72[0]" to "segment720"
+    Warning (275081): Converted element name(s) from "segment72[1]" to "segment721"
+    Warning (275081): Converted element name(s) from "segment72[2]" to "segment722"
+    Warning (275081): Converted element name(s) from "segment72[3]" to "segment723"
+    Warning (275081): Converted element name(s) from "segment72[4]" to "segment724"
+    Warning (275081): Converted element name(s) from "segment72[5]" to "segment725"
+    Warning (275081): Converted element name(s) from "segment72[6]" to "segment726"
+    Warning (275081): Converted element name(s) from "segment72[6..0]" to "segment726..0"
+Warning (275080): Converted elements in bus name "segment73" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "segment73[0]" to "segment730"
+    Warning (275081): Converted element name(s) from "segment73[1]" to "segment731"
+    Warning (275081): Converted element name(s) from "segment73[2]" to "segment732"
+    Warning (275081): Converted element name(s) from "segment73[3]" to "segment733"
+    Warning (275081): Converted element name(s) from "segment73[4]" to "segment734"
+    Warning (275081): Converted element name(s) from "segment73[5]" to "segment735"
+    Warning (275081): Converted element name(s) from "segment73[6]" to "segment736"
+    Warning (275081): Converted element name(s) from "segment73[6..0]" to "segment736..0"
+Warning (275080): Converted elements in bus name "segment74" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "segment74[0]" to "segment740"
+    Warning (275081): Converted element name(s) from "segment74[1]" to "segment741"
+    Warning (275081): Converted element name(s) from "segment74[2]" to "segment742"
+    Warning (275081): Converted element name(s) from "segment74[3]" to "segment743"
+    Warning (275081): Converted element name(s) from "segment74[4]" to "segment744"
+    Warning (275081): Converted element name(s) from "segment74[5]" to "segment745"
+    Warning (275081): Converted element name(s) from "segment74[6]" to "segment746"
+    Warning (275081): Converted element name(s) from "segment74[6..0]" to "segment746..0"
+Info (12128): Elaborating entity "sevenSeg" for hierarchy "sevenSeg:inst9"
+Info (12128): Elaborating entity "dzielnik" for hierarchy "dzielnik:inst45"
+Info (12128): Elaborating entity "licznik16bit" for hierarchy "licznik16bit:inst"
+Warning (10492): VHDL Process Statement warning at licznik16bit.vhd(29): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/kuban/Desktop/timewatch vhdl/licznik16bit.vhd Line: 29
+Info (12128): Elaborating entity "buttonLogika" for hierarchy "buttonLogika:inst50"
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clock50MHz" File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 6
-    Warning (15610): No output dependent on input pin "button" File: C:/Users/kuban/Desktop/KWPUC projekt stoper VHDL/stoperJedenPrzycisk.vhd Line: 7
-Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 115 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 28 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Tue Dec 18 19:28:28 2018
-    Info: Elapsed time: 00:00:14
+    Info (21061): Implemented 85 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 62 warnings
+    Info: Peak virtual memory: 4882 megabytes
+    Info: Processing ended: Wed Dec 19 17:08:03 2018
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:31
 
 

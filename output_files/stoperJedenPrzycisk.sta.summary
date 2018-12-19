@@ -1,5 +1,69 @@
 ------------------------------------------------------------
-Timing Analyzer Summary
+TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock'
+Slack : -3.191
+TNS   : -48.801
+
+Type  : Slow Model Setup 'dzielnik:inst45|temp'
+Slack : -2.515
+TNS   : -45.881
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.696
+TNS   : -2.696
+
+Type  : Slow Model Hold 'dzielnik:inst45|temp'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'dzielnik:inst45|temp'
+Slack : -0.638
+TNS   : -8.423
+
+Type  : Slow Model Removal 'dzielnik:inst45|temp'
+Slack : 1.135
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.631
+TNS   : -35.847
+
+Type  : Slow Model Minimum Pulse Width 'dzielnik:inst45|temp'
+Slack : -0.611
+TNS   : -53.768
+
+Type  : Fast Model Setup 'clock'
+Slack : -0.750
+TNS   : -5.929
+
+Type  : Fast Model Setup 'dzielnik:inst45|temp'
+Slack : -0.484
+TNS   : -4.551
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.724
+TNS   : -1.724
+
+Type  : Fast Model Hold 'dzielnik:inst45|temp'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'dzielnik:inst45|temp'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast Model Removal 'dzielnik:inst45|temp'
+Slack : 0.625
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -29.380
+
+Type  : Fast Model Minimum Pulse Width 'dzielnik:inst45|temp'
+Slack : -0.500
+TNS   : -44.000
 
 ------------------------------------------------------------

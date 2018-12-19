@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Dec 18 19:28:43 2018
+Fitter Status : Failed - Wed Dec 19 17:08:07 2018
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : stoperJedenPrzycisk
-Top-level Entity Name : stoperJedenPrzycisk
+Top-level Entity Name : Block1
 Family : Arria II GX
 Device : EP2AGX45CU17I3
 Timing Models : Final
-Logic utilization : 0 %
-    Combinational ALUTs : 0 / 36,100 ( 0 % )
+Logic utilization : < 1 %
+    Combinational ALUTs : 85 / 36,100 ( < 1 % )
     Memory ALUTs : 0 / 18,050 ( 0 % )
-    Dedicated logic registers : 0 / 36,100 ( 0 % )
-Total registers : 0
+    Dedicated logic registers : 72 / 36,100 ( < 1 % )
+Total registers : 72
 Total pins : 30 / 176 ( 17 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 2,939,904 ( 0 % )

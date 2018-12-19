@@ -10,11 +10,11 @@ end dzielnik;
 
 architecture Behavioral of dzielnik is
     signal temp: STD_LOGIC;
-    signal counter : integer range 0 to 4999999 := 0;
+    signal counter : integer range 0 to 2499999 := 0;
 begin
     frequency_divider: process (clk_in50MHz) begin
         if rising_edge(clk_in50MHz) then
-            if (counter = 4999999) then
+            if (counter = 2499999) then
                 temp <= NOT(temp);
                 counter <= 0;
             else

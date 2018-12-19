@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Dec 18 19:28:28 2018
+Analysis & Synthesis Status : Successful - Wed Dec 19 17:08:02 2018
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : stoperJedenPrzycisk
-Top-level Entity Name : stoperJedenPrzycisk
+Top-level Entity Name : Block1
 Family : Arria II GX
 Logic utilization : N/A
-    Combinational ALUTs : 0
+    Combinational ALUTs : 85
     Memory ALUTs : 0
-    Dedicated logic registers : 0
-Total registers : 0
+    Dedicated logic registers : 72
+Total registers : 72
 Total pins : 30
 Total virtual pins : 0
 Total block memory bits : 0

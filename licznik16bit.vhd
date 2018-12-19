@@ -17,14 +17,14 @@ signal s_dziesietnaS, s_jednoscS, s_dziesiatkaS, s_minuta : std_logic_vector(3 d
 
 begin
 
-process(enable, CLOCK)
+process(CLOCK, RST)
 begin
 
 if RST='1' then
-	s_dziesietnaS <= (others=> '0');
-	s_jednoscS <= (others=> '0');
-	s_dziesiatkaS <= (others=> '0');
-	s_minuta <= (others=> '0');
+	s_dziesietnaS <= (others=> '0'); -- MIEJSCE: [---*]
+	s_jednoscS <= (others=> '0'); -- MIEJSCE: [--*-]
+	s_dziesiatkaS <= (others=> '0'); -- MIEJSCE: [-*--]
+	s_minuta <= (others=> '0'); -- MIEJSCE: [*---]
 	
 elsif (enable = '1' and rising_edge(CLOCK)) then
 	if s_dziesietnaS="1001" then

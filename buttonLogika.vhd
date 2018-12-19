@@ -13,7 +13,7 @@ signal Q : std_logic_vector(2 downto 0) :="000";--poczatkowa deklaracja Q
 
 begin 
 
-process(CLK_btn, button)
+process(CLK_btn)
 begin
 
 if rising_edge(CLK_btn) then --przy wzrazstajacym zboczu sprawdza logike
@@ -72,7 +72,7 @@ if rising_edge(CLK_btn) then --przy wzrazstajacym zboczu sprawdza logike
 		reset<='0';
 	end if;
 	if (Q="100" and button='1') then
-		Q<="101";
+		Q<="100";
 		start<='0';
 		reset<='0';
 	end if;
@@ -88,6 +88,8 @@ if rising_edge(CLK_btn) then --przy wzrazstajacym zboczu sprawdza logike
 		start<='0';
 		reset<='1';
 	end if;
+	
+		
 end if;
 
 end process;
