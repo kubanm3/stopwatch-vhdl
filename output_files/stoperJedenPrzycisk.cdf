@@ -3,8 +3,6 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Cfg)
-		Device PartName(EP2C20F484) Path("D:/KSUC/grupa C/timewatch vhdl/output_files/") File("stoperJedenPrzycisk.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

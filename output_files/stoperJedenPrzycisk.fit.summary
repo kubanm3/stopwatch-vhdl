@@ -1,22 +1,16 @@
-Fitter Status : Failed - Wed Dec 19 17:08:07 2018
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fitter Status : Successful - Mon Jan 07 14:16:14 2019
+Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : stoperJedenPrzycisk
 Top-level Entity Name : Block1
-Family : Arria II GX
-Device : EP2AGX45CU17I3
+Family : Cyclone II
+Device : EP2C20F484C7
 Timing Models : Final
-Logic utilization : < 1 %
-    Combinational ALUTs : 85 / 36,100 ( < 1 % )
-    Memory ALUTs : 0 / 18,050 ( 0 % )
-    Dedicated logic registers : 72 / 36,100 ( < 1 % )
+Total logic elements : 109 / 18,752 ( < 1 % )
+    Total combinational functions : 109 / 18,752 ( < 1 % )
+    Dedicated logic registers : 72 / 18,752 ( < 1 % )
 Total registers : 72
-Total pins : 30 / 176 ( 17 % )
+Total pins : 30 / 315 ( 10 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 2,939,904 ( 0 % )
-DSP block 18-bit elements : 0 / 232 ( 0 % )
-Total GXB Receiver Channel PCS : 0 / 4 ( 0 % )
-Total GXB Receiver Channel PMA : 0 / 4 ( 0 % )
-Total GXB Transmitter Channel PCS : 0 / 4 ( 0 % )
-Total GXB Transmitter Channel PMA : 0 / 4 ( 0 % )
+Total memory bits : 0 / 239,616 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
-Total DLLs : 0 / 2 ( 0 % )

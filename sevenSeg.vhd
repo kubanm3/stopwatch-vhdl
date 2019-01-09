@@ -6,15 +6,14 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity sevenSeg is
 port (
 		clk : in std_logic;
-		bcd : in std_logic_vector(3 downto 0);  --BCD input
-		segment7 : out std_logic_vector(6 downto 0)  -- 7 bit decoded output.
+		bcd : in std_logic_vector(3 downto 0);
+		segment7 : out std_logic_vector(6 downto 0)
     );
 end sevenSeg;
---'a' corresponds to MSB of segment7 and g corresponds to LSB of segment7.
 architecture Behavioral of sevenSeg is
 
 begin
-process (clk,bcd)
+process (clk)
 BEGIN
 	if (clk'event and clk='1') then
 		case  bcd is
@@ -28,8 +27,7 @@ BEGIN
 			when "0111"=> segment7 <="1111000";  -- '7'
 			when "1000"=> segment7 <="0000000";  -- '8'
 			when "1001"=> segment7 <="0010000";  -- '9'
-			--	nothing is displayed when a number more than 9 is given as input. 
-			when others=> segment7 <="1111111"; 
+			when others=> segment7 <="1111111";  -- reszta możliwości
 			
 			
 			

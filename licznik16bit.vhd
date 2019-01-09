@@ -20,31 +20,31 @@ begin
 process(CLOCK, RST)
 begin
 
-if RST='1' then
+if RST='1' then --jezeli RST = 1 to resetujemy wszystkie liczniki do wartosci 0
 	s_dziesietnaS <= (others=> '0'); -- MIEJSCE: [---*]
 	s_jednoscS <= (others=> '0'); -- MIEJSCE: [--*-]
 	s_dziesiatkaS <= (others=> '0'); -- MIEJSCE: [-*--]
 	s_minuta <= (others=> '0'); -- MIEJSCE: [*---]
 	
 elsif (enable = '1' and rising_edge(CLOCK)) then
-	if s_dziesietnaS="1001" then
-		s_dziesietnaS<="0000";
-		if s_jednoscS="1001" then
-			s_jednoscS<="0000";
-			if s_dziesiatkaS="0101" then
-				s_dziesiatkaS<="0000";
-				if s_minuta="1001" then
-					s_minuta<="0000";
-				else 
+	if s_dziesietnaS="1001" then --sprawdzenie czy wystepuje 9
+		s_dziesietnaS<="0000";--jezeli tak ustawiamy 0 i schodzimy nizej
+		if s_jednoscS="1001" then--sprawdzenie czy wystepuje 9
+			s_jednoscS<="0000";--jezeli tak ustawiamy 0 i schodzimy nizej
+			if s_dziesiatkaS="0101" then--sprawdzenie czy wystepuje 5
+				s_dziesiatkaS<="0000";--jezeli tak ustawiamy 0 i schodzimy nizej
+				if s_minuta="1001" then--sprawdzenie czy wystepuje 9
+					s_minuta<="0000";--jezeli tak ustawiamy 0
+				else --jezeli nie ma zera to inkrementujemy
 					s_minuta <= s_minuta + 1;
 				end if;
-			else 
+			else --jezeli nie ma zera to inkrementujemy
 				s_dziesiatkaS <= s_dziesiatkaS + 1;
 			end if;
-		else
+		else--jezeli nie ma zera to inkrementujemy
 			s_jednoscS <= s_jednoscS + 1;
 		end if;
-	else
+	else--jezeli nie ma zera to inkrementujemy
 		s_dziesietnaS <= s_dziesietnaS + 1;
 	end if;
 end if;
@@ -58,24 +58,3 @@ OUTPUT3<=s_minuta;
 
 					
 end Behavioral;			
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					

@@ -4,19 +4,19 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect -376 192 -208 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "button" (rect 5 0 36 12)(font "Arial" ))
+	(text "button" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -821,11 +821,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 752 48)
-	(pt 752 16)
-	(bus)
-)
-(connector
 	(pt 752 64)
 	(pt 752 48)
 	(bus)
@@ -876,11 +871,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 744 384)
-	(pt 744 392)
-	(bus)
-)
-(connector
 	(pt 728 432)
 	(pt 728 448)
 	(bus)
@@ -906,11 +896,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 728 512)
-	(pt 728 528)
-	(bus)
-)
-(connector
 	(pt 712 584)
 	(pt 712 600)
 	(bus)
@@ -933,11 +918,6 @@ applicable agreement for further details.
 (connector
 	(pt 712 648)
 	(pt 712 664)
-	(bus)
-)
-(connector
-	(pt 712 664)
-	(pt 712 688)
 	(bus)
 )
 (connector
@@ -1157,24 +1137,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 136 280)
-	(pt 160 280)
-)
-(connector
-	(pt 160 280)
-	(pt 208 280)
-)
-(connector
 	(pt 520 152)
 	(pt 472 152)
-)
-(connector
-	(pt 160 456)
-	(pt 472 456)
-)
-(connector
-	(pt 472 456)
-	(pt 504 456)
 )
 (connector
 	(pt 512 352)
@@ -1213,10 +1177,6 @@ applicable agreement for further details.
 	(pt -88 184)
 )
 (connector
-	(pt 160 280)
-	(pt 160 456)
-)
-(connector
 	(pt 168 264)
 	(pt 168 168)
 )
@@ -1237,10 +1197,6 @@ applicable agreement for further details.
 	(pt 104 184)
 )
 (connector
-	(pt -88 184)
-	(pt -88 280)
-)
-(connector
 	(pt -104 280)
 	(pt -88 280)
 )
@@ -1248,7 +1204,26 @@ applicable agreement for further details.
 	(pt -88 280)
 	(pt -64 280)
 )
-(junction (pt 752 48))
+(connector
+	(pt 136 280)
+	(pt 208 280)
+)
+(connector
+	(pt -88 456)
+	(pt 472 456)
+)
+(connector
+	(pt 472 456)
+	(pt 504 456)
+)
+(connector
+	(pt -88 184)
+	(pt -88 280)
+)
+(connector
+	(pt -88 280)
+	(pt -88 456)
+)
 (junction (pt 752 64))
 (junction (pt 752 80))
 (junction (pt 752 96))
@@ -1261,22 +1236,18 @@ applicable agreement for further details.
 (junction (pt 744 336))
 (junction (pt 744 352))
 (junction (pt 744 368))
-(junction (pt 744 384))
 (junction (pt 728 416))
 (junction (pt 728 432))
 (junction (pt 728 448))
 (junction (pt 728 464))
 (junction (pt 728 480))
 (junction (pt 728 496))
-(junction (pt 728 512))
 (junction (pt 712 568))
 (junction (pt 712 584))
 (junction (pt 712 600))
 (junction (pt 712 616))
 (junction (pt 712 632))
 (junction (pt 712 648))
-(junction (pt 712 664))
-(junction (pt 160 280))
 (junction (pt 472 456))
 (junction (pt 472 352))
 (junction (pt 472 248))

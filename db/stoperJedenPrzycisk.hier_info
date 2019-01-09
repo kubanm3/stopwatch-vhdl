@@ -1,7 +1,11 @@
 |Block1
 pin_name3 <= segment70.DB_MAX_OUTPUT_PORT_TYPE
-clock => dzielnik:inst45.clk_in50MHz
+clock => sevenSeg:inst9.clk
 clock => buttonLogika:inst50.CLK_btn
+clock => dzielnik:inst45.clk_in50MHz
+clock => sevenSeg:inst6.clk
+clock => sevenSeg:inst7.clk
+clock => sevenSeg:inst8.clk
 button => buttonLogika:inst50.button
 pin_name4 <= segment71.DB_MAX_OUTPUT_PORT_TYPE
 pin_name5 <= segment72.DB_MAX_OUTPUT_PORT_TYPE
@@ -75,33 +79,6 @@ segment7[3] <= segment7[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 segment7[4] <= segment7[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 segment7[5] <= segment7[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 segment7[6] <= segment7[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Block1|dzielnik:inst45
-clk_in50MHz => counter[0].CLK
-clk_in50MHz => counter[1].CLK
-clk_in50MHz => counter[2].CLK
-clk_in50MHz => counter[3].CLK
-clk_in50MHz => counter[4].CLK
-clk_in50MHz => counter[5].CLK
-clk_in50MHz => counter[6].CLK
-clk_in50MHz => counter[7].CLK
-clk_in50MHz => counter[8].CLK
-clk_in50MHz => counter[9].CLK
-clk_in50MHz => counter[10].CLK
-clk_in50MHz => counter[11].CLK
-clk_in50MHz => counter[12].CLK
-clk_in50MHz => counter[13].CLK
-clk_in50MHz => counter[14].CLK
-clk_in50MHz => counter[15].CLK
-clk_in50MHz => counter[16].CLK
-clk_in50MHz => counter[17].CLK
-clk_in50MHz => counter[18].CLK
-clk_in50MHz => counter[19].CLK
-clk_in50MHz => counter[20].CLK
-clk_in50MHz => counter[21].CLK
-clk_in50MHz => temp.CLK
-clk_out10Hz <= temp.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Block1|licznik16bit:inst
@@ -191,6 +168,33 @@ CLK_btn => Q[1].CLK
 CLK_btn => Q[2].CLK
 start <= start~reg0.DB_MAX_OUTPUT_PORT_TYPE
 reset <= reset~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|dzielnik:inst45
+clk_in50MHz => counter[0].CLK
+clk_in50MHz => counter[1].CLK
+clk_in50MHz => counter[2].CLK
+clk_in50MHz => counter[3].CLK
+clk_in50MHz => counter[4].CLK
+clk_in50MHz => counter[5].CLK
+clk_in50MHz => counter[6].CLK
+clk_in50MHz => counter[7].CLK
+clk_in50MHz => counter[8].CLK
+clk_in50MHz => counter[9].CLK
+clk_in50MHz => counter[10].CLK
+clk_in50MHz => counter[11].CLK
+clk_in50MHz => counter[12].CLK
+clk_in50MHz => counter[13].CLK
+clk_in50MHz => counter[14].CLK
+clk_in50MHz => counter[15].CLK
+clk_in50MHz => counter[16].CLK
+clk_in50MHz => counter[17].CLK
+clk_in50MHz => counter[18].CLK
+clk_in50MHz => counter[19].CLK
+clk_in50MHz => counter[20].CLK
+clk_in50MHz => counter[21].CLK
+clk_in50MHz => temp.CLK
+clk_out10Hz <= temp.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Block1|sevenSeg:inst6
